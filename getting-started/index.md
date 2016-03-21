@@ -17,8 +17,8 @@ share: false
   <div class="wrap">
     
     <div class="page-title">
-      <h1>Articles</h1>
-      <h2>A collection of thoughts, inspiration, mistakes, and other minutia.</h2>
+      <h1>Online Courses</h1>
+      <h2>The online course I completed sucessfully.</h2>
     </div>
     <div class="archive-wrap">
       <div class="page-content">
@@ -30,7 +30,7 @@ share: false
       <img src="{{ member.image_url }}" alt="teaser" itemprop="image">
     </a>
     <p class="entry-date date published">{{ member.date }}</p>
-    <h2 class="post-title" itemprop="name"><a href="{{ member.website }}">{{ member.name }}</a></h2>
+    <h2 class="post-title" itemprop="name"><a href="{{ member.website }}">{{ member.name }} ({{ member.platform }})</a></h2>
     <p class="post-excerpt" itemprop="description">{{ member.description }}</p>
   </article>
 {% endfor %}
