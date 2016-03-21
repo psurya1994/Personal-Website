@@ -34,7 +34,7 @@ share: false
 {% for member in site.data.online_courses %}
   <article class="tile" itemscope="" itemtype="http://schema.org/Article" >
     <a href="" title="{{ member.name }}" class="post-teaser">
-      <img src="" alt="teaser" itemprop="image">
+      <img src="{{ member.image_url }}" alt="teaser" itemprop="image">
       {{ member.name }}
     </a>
     <p class="entry-date date published">{{ member.date }}</p>
