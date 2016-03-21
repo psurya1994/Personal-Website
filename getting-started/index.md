@@ -35,9 +35,10 @@ share: false
   <article class="tile" itemscope="" itemtype="http://schema.org/Article" >
     <a href="" title="{{ member.name }}" class="post-teaser">
       <img src="{{ member.image_url }}" alt="teaser" itemprop="image">
-      {{ member.name }}
     </a>
     <p class="entry-date date published">{{ member.date }}</p>
+    <h2 class="post-title" itemprop="name"><a href="{{ member.website }}">{{ member.name }}</a></h2>
+    <p class="post-excerpt" itemprop="description">{{ member.description }}</p>
   </article>
 {% endfor %}
 
